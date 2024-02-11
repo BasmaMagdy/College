@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Contact</title>
+    </head>    
+   
+    <body>
+         <!--Header & Nav-->
+         <section class="sub-header">
+           
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Contact Us</h1>
+        
+        </section>
+
+        <!-- Contact -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03612512146!2d-74.30933714401378!3d40.6975399537724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2seg!4v1707556594747!5m2!1sen!2seg"
+            width="600" height="450" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building.</h5>
+                        <p>Bangalore, Karnataka, IN.</p>
+                    </span>
+
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+2 0123456789</h5>
+                        <p>Monday to Saturday, 10 Am to 6 PM.</p>
+                    </span>
+
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>basma.magdy998@gmail.com</h5>
+                        <p>Email Us Your Query.</p>
+                    </span>
+                </div>
+
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn"> Send Message </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>
+                is getting young people to read more news.
+                Why? Most college students get their information from social media, which is inconsistent and unreliable.
+                <br>That means young people are entering the real world — voting and engaging in civic discourse — without any real understanding of what's happening around them.
+                <br>This is bad for our democracy.
+                So we're bridging the gap between social media and traditional news consumption with daily email briefs at college campuses. 
+                <br>They're brief. Succinct. And visually pleasing.
+            </p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>
+                Made With <i class="fa fa-heart-o"></i> by Basma Magdy
+            </p>
+        </section>
+
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+            
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
